@@ -4,38 +4,21 @@ import Third from "../assets/Third.jpg";
 
 export default [
   {
-    title: "First Slide",
-    description: "This is the first slider Image of our carousel",
+    title: "Best PRICE",
+    description:
+      "We are so fortunate to have this place just a few minutes drive away from home. Food is stunning, both the tapas and downstairs restaurant. Cocktails wow, wine great and lovely selection of beers. Love this place and will continue to visit.",
     urls: First,
   },
   {
-    title: "Second Slide",
-    description: "This is the second slider Image of our carousel",
+    title: "Excellent FOOD",
+    description:
+      "Menu is extensive and seasonal to a particularly high standard. Definitely fine dining. It can be expensive but worth it and they do different deals on different nights so it’s worth checking them out before you book. Highly recommended.",
     urls: Second,
   },
   {
-    title: "Third Slide",
-    description: "This is the Third slider Image of our carousel",
+    title: "Great EXPERIENCE",
+    description:
+      "This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again. Loved this place.",
     urls: Third,
-  },
-  {
-    title: "Fourth Slide",
-    description: "This is the Fourth slider Image of our carousel",
-    urls: "https://mdbootstrap.com/img/Photos/Slides/img%20(133).jpg",
-  },
-  {
-    title: "Fifth Slide",
-    description: "This is the Fifth slider Image of our carousel",
-    urls: "https://mdbootstrap.com/img/Photos/Slides/img%20(147).jpg",
-  },
-  {
-    title: "Sixth Slide",
-    description: "This is the Sixth slider Image of our carousel",
-    urls: "https://mdbootstrap.com/img/Photos/Slides/img%20(105).jpg",
-  },
-  {
-    title: "Seventh Slide",
-    description: "This is the Seventh slider Image of our carousel",
-    urls: "https://mdbootstrap.com/img/Photos/Slides/img%20(102).jpg",
   },
 ];
