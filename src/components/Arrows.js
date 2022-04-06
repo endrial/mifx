@@ -4,10 +4,10 @@ function Arrows({ prevSlide, nextSlide }) {
   return (
     <div className="arrows">
       <span className="prev" onClick={prevSlide}>
-        &#10094;
+        &#9664;
       </span>
       <span className="next" onClick={nextSlide}>
-        &#10095;
+        &#9654;
       </span>
     </div>
   );

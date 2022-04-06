@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --heights: 100vh;
+  --widths: 100%;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  background: #000;
+
+  @media screen and (max-width: 667px) {
+    display: block;
+  }
+}
+
+.image {
+  float: left;
+  width: 50%;
+  height: 100vh;
+
+  .slide-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.slide-content {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 30%;
+
+  .arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    color: #fff;
+  }
+}
+
+.text-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  color: #fff;
+  text-align: center;
+
+  h1,
+  .slide-title,
+  .slide-text,
+  .slide-reviewer {
+    margin: 0 50px 20px 50px;
+    color: #fff;
+  }
+
+  .slide-text {
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    font-style: italic;
+  }
+
+  hr {
+    width: 40px;
+    margin: 0 auto 20px;
+    background: white;
+  }
+
+  .quote {
+    color: #fff;
+    font-size: 50px;
+  }
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  top: 85%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 667px) {
+  .slide-content {
+    background-color: rebeccapurple;
+    height: 100%;
+
+    .arrows {
+      position: relative;
+      top: 50%;
+    }
+  }
+  .slide-text {
+    display: table;
+  }
+
+  .test {
+    display: inline-block;
+    vertical-align: middle;
+
+    .slide-title {
+      text-align: center;
+    }
+
+    .slide-text {
+      text-align: center;
+      margin: 0 50px;
+    }
+  }
+}
